@@ -27,10 +27,9 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 
 ### In-situ Measurements (143 Samples)
 **Sampling Campaigns:**
-1. **August 2016** (Rainy season) - 48 samples
-2. **December 2016** (Dry season) - 47 samples  
-3. **March 2017** (Post-rainy season) - 48 samples
-
+1. **August 2016** (Rainy season) 
+2. **December 2016** (Dry season)   
+3. **March 2017** (Post-rainy season) 
 **Sampling Design:**
 - 5km systematic grid across Lake Tana
 - GPS coordinates recorded for each sample
