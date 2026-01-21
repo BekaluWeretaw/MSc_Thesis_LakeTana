@@ -1,10 +1,10 @@
-# MSc_Thesis_LakeTana
 # MSc Thesis: Spatial and Temporal Variation of Water Quality Parameters in Lake Tana Using Remote Sensing, Ethiopia
 
 ![Google Earth Engine](https://img.shields.io/badge/Platform-Google%20Earth%20Engine-blue)
 ![MODIS](https://img.shields.io/badge/Satellite-MODIS%20MOD09Q1-green)
 ![Years](https://img.shields.io/badge/Period-2008%E2%80%932018-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Samples](https://img.shields.io/badge/Samples-143%20in--situ-brightgreen)
 
 ## 👨‍🎓 Author Information
 **Name:** Bekalu Weretaw Asres  
@@ -23,11 +23,33 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 4. Conduct trend analysis using statistical methods
 5. Provide recommendations for lake management
 
-## 🚀 Quick Start
+## 🔬 Field Data Collection
 
-### 1. Open Google Earth Engine
-[Google Earth Engine Code Editor](https://code.earthengine.google.com/)
+### In-situ Measurements
+The research includes comprehensive field data collection:
 
-### 2. Copy the Main Script
-```javascript
-// Copy from: scripts/main/GEE_Thesis_Analysis.js
+**Sampling Campaigns:**
+1. **August 2016** (Rainy season)
+2. **December 2016** (Dry season)  
+3. **March 2017** (Post-rainy season)
+
+**Data Collected:**
+- 143 geo-referenced water samples
+- 5km sampling grid across Lake Tana
+- GPS coordinates for spatial registration
+
+**Measured Parameters:**
+1. Secchi Depth (SD) - water clarity
+2. Chlorophyll-a (Chl-a) - algal biomass  
+3. Total Nitrogen (TN) - nutrient status
+4. Total Phosphorus (TP) - nutrient status
+5. Total Dissolved Solids (TDS) - salinity indicator
+6. pH - acidity/alkalinity
+7. Temperature
+
+### Data Integration
+- Field data used for model calibration
+- Satellite data validated with in-situ measurements
+- Integrated spatial-temporal analysis
+
+
