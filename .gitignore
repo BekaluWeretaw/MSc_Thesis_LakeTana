@@ -1,0 +1,25 @@
+# Data files
+*.tif
+*.tiff
+*.geotiff
+*.csv
+*.xlsx
+*.nc
+*.hdf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Large files
+*.zip
+*.tar.gz
