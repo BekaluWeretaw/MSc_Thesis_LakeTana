@@ -43,4 +43,5 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 5. Total Dissolved Solids (TDS) - salinity indicator
 6. pH - acidity/alkalinity
 7. Temperature
+## 📁 Repository Structure
 
