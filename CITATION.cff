@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Spatial and Temporal Variation of Water Quality Parameters in Lake Tana Using Remote Sensing"
+authors:
+  - family-names: "Asres"
+    given-names: "Bekalu Weretaw"
+    affiliation: "Bahir Dar University, Institute of Technology"
+type: "software"
+license: "MIT"
+repository-code: "https://github.com/BekaluWeretaw/MSc_Thesis_LakeTana"
+version: "1.0.0"
+date-released: "2020-02-12"
+doi: "10.5281/zenodo.XXXXXXX"
+message: "If you use this software, please cite it as below."
