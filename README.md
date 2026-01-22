@@ -49,17 +49,18 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 5. **Trend Analysis:** Statistical trend detection (e.g., Mann-Kendall, Sen's Slope) on the generated time series.
 
 ## 📁 Repository Structure
-
+```
 MSc_Thesis_LakeTana/
 ├── scripts/
-│ ├── main/GEE_Thesis_With_FieldData.js # Complete analysis script
-│ └── utils/field_data_loader.js # 143 samples data handler
-├── docs/setup_guide.md # Usage instructions
-├── thesis/abstract.md # Thesis abstract
+│   ├── main/GEE_Thesis_With_FieldData.js     # Complete analysis script
+│   └── utils/field_data_loader.js           # 143 samples data handler
+├── docs/setup_guide.md                      # Usage instructions
+├── thesis/abstract.md                       # Thesis abstract
 ├── LICENSE
 ├── CITATION.cff
 ├── .gitignore
 └── README.md
+```
 
 
 ## 🚀 Quick Start
