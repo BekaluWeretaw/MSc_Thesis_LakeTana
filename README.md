@@ -72,7 +72,7 @@ Spatio-Temporal Analysis: Application of calibrated models to generate monthly, 
 Trend Analysis: Statistical trend detection (e.g., Mann-Kendall, Sen's Slope) on the generated time series.
 
 📁 Repository Structure
-text
+
 MSc_Thesis_LakeTana/
 ├── scripts/
 │   ├── main/GEE_Thesis_With_FieldData.js     # Complete analysis script
@@ -83,7 +83,8 @@ MSc_Thesis_LakeTana/
 ├── CITATION.cff
 ├── .gitignore
 └── README.md
-🚀 Quick Start
+
+ Quick Start
 1. Access the Google Earth Engine Platform
 Navigate to the Google Earth Engine Code Editor. You will need a registered GEE account.
 
@@ -143,7 +144,7 @@ Seasonal Variations: Water quality parameters show highest variability during th
 Model Performance: Empirical models showed strong correlation (R² > 0.7) for Secchi Depth and Chlorophyll-a when validated against field data.
 
 📚 How to Cite
-bibtex
+
 @mastersthesis{asres2020laketana,
   author  = {Bekalu Weretaw Asres},
   title   = {Spatial and Temporal Variation of Water Quality Parameters 
@@ -154,7 +155,8 @@ bibtex
   note    = {Supervised by Fasikaw Atanaw (PhD)},
   url     = {https://github.com/BekaluWeretaw/MSc_Thesis_LakeTana}
 }
-👤 Contact
+
+Contact
 Author: Bekalu Weretaw Asres
 
 GitHub: @BekaluWeretaw
