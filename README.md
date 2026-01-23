@@ -55,20 +55,19 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 ## 📁 Repository Structure
 MSc_Thesis_LakeTana/
 ├── scripts/
-│ ├── main/
-│ │ ├── GEE_Thesis_With_FieldData.js # Complete 11-year analysis (2008-2018)
-│ │ └── water_quality_shapefile_analysis.js # Shapefile-based empirical models
-│ └── utils/
-│ └── field_data_loader.js # 143 in-situ samples data handler
+│   ├── main/
+│   │   ├── GEE_Thesis_With_FieldData.js
+│   │   └── water_quality_shapefile_analysis.js
+│   └── utils/
+│       └── field_data_loader.js
 ├── docs/
-│ └── setup_guide.md # Usage instructions
+│   └── setup_guide.md
 ├── thesis/
-│ └── abstract.md # Thesis abstract
+│   └── abstract.md
 ├── LICENSE
 ├── CITATION.cff
 ├── .gitignore
 └── README.md
-
 
 ## 🚀 Quick Start
 ### Option 1: Complete 11-Year Analysis
