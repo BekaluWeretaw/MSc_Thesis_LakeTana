@@ -171,20 +171,18 @@ MSc_Thesis_LakeTana/
 - ✓ Median compositing for robust results
 - ✓ Automated export and visualization
 
-📞 Contact
-Author: Bekalu Weretaw Asres
-GitHub: @BekaluWeretaw
-Institution: Bahir Dar University, Institute of Technology
-Department: Hydraulic Engineering
+## 📞 Contact
+**Author:** Bekalu Weretaw Asres  
+**GitHub:** [@BekaluWeretaw](https://github.com/BekaluWeretaw)  
+**Institution:** Bahir Dar University, Institute of Technology  
+**Department:** Hydraulic Engineering
 
-🙏 Acknowledgments
-Primary Supervisor: Dr. Fasikaw Atanaw
+## 🙏 Acknowledgments
+- **Primary Supervisor:** Dr. Fasikaw Atanaw
+- **Academic Institution:** Bahir Dar University
+- **Technical Support:** Google Earth Engine Team
+- **Data Providers:** NASA LP DAAC (MODIS data)
 
-Academic Institution: Bahir Dar University
+## 📜 License
+This work is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Technical Support: Google Earth Engine Team
-
-Data Providers: NASA LP DAAC (MODIS data)
-
-📜 License
-This work is licensed under the MIT License - see the LICENSE file for details.
