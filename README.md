@@ -3,7 +3,7 @@
 ![Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Script-blue)
 ![MODIS](https://img.shields.io/badge/Data-MODIS%20Terra-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Publication](https://img.shields.io/badge/Published-Frontiers%20in%20Water-blueviolet)
+![Status](https://img.shields.io/badge/Publication-Under%20Review-orange)
 ![Samples](https://img.shields.io/badge/Field%20Samples-143-orange)
 
 ## 👨‍🎓 Author Information
@@ -11,8 +11,8 @@
 **Degree:** Master of Science in Hydraulic Engineering  
 **University:** Bahir Dar University, Institute of Technology  
 **Supervisor:** Fasikaw Atanaw (PhD)  
-**Submission Date:** 12 February 2020  
-**Publication:** Frontiers in Water (2025)
+**Thesis Submission:** 12 February 2020  
+**Journal Submission:** Frontiers in Water (Under Review)
 
 ## 📖 Abstract
 This research utilizes MODIS satellite imagery to analyze spatial and temporal variations of water quality parameters in Lake Tana, Ethiopia. The study covers an 11-year period (2008-2018) and includes detailed seasonal analysis for August 2016, December 2016, and March 2017. Using Google Earth Engine, the research implements empirical regression models for water quality parameter estimation calibrated with 143 field samples, and conducts comprehensive trend analysis.
@@ -53,12 +53,11 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 5. **Trend Analysis:** Statistical trend detection (Mann-Kendall, Sen's Slope) on time series.
 
 ## 📁 Repository Structure
-
 MSc_Thesis_LakeTana/
 ├── scripts/
 │ ├── main/
 │ │ ├── GEE_Thesis_With_FieldData.js # Complete 11-year analysis (2008-2018)
-│ │ └── water_quality_shapefile_analysis.js # Shapefile-based empirical models (Frontiers in Water 2025)
+│ │ └── water_quality_shapefile_analysis.js # Shapefile-based empirical models
 │ └── utils/
 │ └── field_data_loader.js # 143 in-situ samples data handler
 ├── docs/
@@ -73,35 +72,35 @@ MSc_Thesis_LakeTana/
 
 ## 🚀 Quick Start
 ### Option 1: Complete 11-Year Analysis
-1. **Access the Google Earth Engine Platform**
+1. **Access the Google Earth Engine Platform**  
    Navigate to the Google Earth Engine Code Editor with a registered GEE account.
 
-2. **Prepare Your Field Data**
-   Open `scripts/utils/field_data_loader.js`
+2. **Prepare Your Field Data**  
+   Open `scripts/utils/field_data_loader.js`  
    Replace the placeholder arrays with your 143 actual field measurements:
    - `var samplePoints` (GPS coordinates)
    - `var secchiDepth`, `var chlorophyll`, etc. (parameter values)
 
-3. **Run the Analysis in GEE**
-   Copy the entire contents of `scripts/main/GEE_Thesis_With_FieldData.js` into the GEE code editor.
-   If using the separate utility file, also copy `scripts/utils/field_data_loader.js`.
-   Click the "Run" button to execute the script.
-   Monitor the "Console" tab for processing progress.
+3. **Run the Analysis in GEE**  
+   Copy the entire contents of `scripts/main/GEE_Thesis_With_FieldData.js` into the GEE code editor.  
+   If using the separate utility file, also copy `scripts/utils/field_data_loader.js`.  
+   Click the "Run" button to execute the script.  
+   Monitor the "Console" tab for processing progress.  
    Navigate to the "Tasks" tab to initiate exports.
 
-### Option 2: Shapefile-Based Empirical Models (Publication Ready)
-1. **Run Shapefile Analysis**
-   Copy `scripts/main/water_quality_shapefile_analysis.js` into GEE Code Editor.
+### Option 2: Shapefile-Based Empirical Models
+1. **Run Shapefile Analysis**  
+   Copy `scripts/main/water_quality_shapefile_analysis.js` into GEE Code Editor.  
    Click "Run" to execute.
 
-2. **Visualize Results**
+2. **Visualize Results**  
    After running, call: `visualizeResults()` to display map layers.
 
-3. **Export Data**
+3. **Export Data**  
    Use: `Export.table.toDrive({collection: exportData, description: "Lake_Tana_Metadata"});`
 
-4. **Adapt for Your Own Study Area**
-   - Update the lakeTana boundary geometry
+4. **Adapt for Your Own Study Area**  
+   - Update the lakeTana boundary geometry  
    - Ensure field data corresponds with satellite imagery period
 
 ## 📊 Available Scripts
@@ -119,19 +118,19 @@ MSc_Thesis_LakeTana/
   - Season-specific Secchi Depth models (R² up to 0.77)
   - Calibrated with 300 field samples
   - Visualization and export functions
-  - Publication-ready for Frontiers in Water (2025)
+  - Research-ready for journal submission
 
 ### Field Data Utilities
 - **`field_data_loader.js`** - Primary field data handler for 143 samples
 
-## 🎯 Publication-Ready Shapefile Analysis
+## 🎯 Shapefile-Based Water Quality Analysis
 **Script:** `scripts/main/water_quality_shapefile_analysis.js`
 
 **Key Features:**
 - Uses exact 2017 Lake Tana shapefile boundary (3057.86 km²)
 - Implements season-specific empirical Secchi Depth models
 - Calibrated with 300 field samples (100 per season)
-- Publication: Frontiers in Water (2025)
+- Prepared for journal submission
 
 **Empirical Models:**
 | Season | Model | R² | Field Samples |
