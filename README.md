@@ -3,7 +3,7 @@
 ![Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Script-blue)
 ![MODIS](https://img.shields.io/badge/Data-MODIS%20Terra-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Status](https://img.shields.io/badge/Publication-Under%20Review-orange)
+![Status](https://img.shields.io/badge/Status-Research%20Complete-success)
 ![Samples](https://img.shields.io/badge/Field%20Samples-143-orange)
 
 ## 👨‍🎓 Author Information
@@ -12,7 +12,7 @@
 **University:** Bahir Dar University, Institute of Technology  
 **Supervisor:** Fasikaw Atanaw (PhD)  
 **Thesis Submission:** 12 February 2020  
-**Journal Submission:** Frontiers in Water (Under Review)
+**Current Status:** Research Complete - Ready for Publication
 
 ## 📖 Abstract
 This research utilizes MODIS satellite imagery to analyze spatial and temporal variations of water quality parameters in Lake Tana, Ethiopia. The study covers an 11-year period (2008-2018) and includes detailed seasonal analysis for August 2016, December 2016, and March 2017. Using Google Earth Engine, the research implements empirical regression models for water quality parameter estimation calibrated with 143 field samples, and conducts comprehensive trend analysis.
@@ -55,15 +55,15 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 ## 📁 Repository Structure
 MSc_Thesis_LakeTana/
 ├── scripts/
-│   ├── main/
-│   │   ├── GEE_Thesis_With_FieldData.js
-│   │   └── water_quality_shapefile_analysis.js
-│   └── utils/
-│       └── field_data_loader.js
+│ ├── main/
+│ │ ├── GEE_Thesis_With_FieldData.js # Complete 11-year analysis (2008-2018)
+│ │ └── water_quality_shapefile_analysis.js # Shapefile-based empirical models
+│ └── utils/
+│ └── field_data_loader.js # 143 in-situ samples data handler
 ├── docs/
-│   └── setup_guide.md
+│ └── setup_guide.md # Usage instructions
 ├── thesis/
-│   └── abstract.md
+│ └── abstract.md # Thesis abstract
 ├── LICENSE
 ├── CITATION.cff
 ├── .gitignore
@@ -117,7 +117,7 @@ MSc_Thesis_LakeTana/
   - Season-specific Secchi Depth models (R² up to 0.77)
   - Calibrated with 300 field samples
   - Visualization and export functions
-  - Research-ready for journal submission
+  - Ready for journal publication
 
 ### Field Data Utilities
 - **`field_data_loader.js`** - Primary field data handler for 143 samples
@@ -129,7 +129,7 @@ MSc_Thesis_LakeTana/
 - Uses exact 2017 Lake Tana shapefile boundary (3057.86 km²)
 - Implements season-specific empirical Secchi Depth models
 - Calibrated with 300 field samples (100 per season)
-- Prepared for journal submission
+- Publication-ready empirical models
 
 **Empirical Models:**
 | Season | Model | R² | Field Samples |
@@ -168,21 +168,6 @@ MSc_Thesis_LakeTana/
 - ✓ Memory-efficient processing at 500m scale
 - ✓ Median compositing for robust results
 - ✓ Automated export and visualization
-
-## 📚 How to Cite
-
-### Thesis Citation:
-```bibtex
-@mastersthesis{asres2020laketana,
-  author  = {Bekalu Weretaw Asres},
-  title   = {Spatial and Temporal Variation of Water Quality Parameters 
-             in Lake Tana Using Remote Sensing, Ethiopia},
-  school  = {Bahir Dar University, Institute of Technology},
-  year    = {2020},
-  address = {Bahir Dar, Ethiopia},
-  note    = {Supervised by Fasikaw Atanaw (PhD)},
-  url     = {https://github.com/BekaluWeretaw/MSc_Thesis_LakeTana}
-}
 
 📞 Contact
 Author: Bekalu Weretaw Asres
