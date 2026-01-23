@@ -1,6 +1,10 @@
 # MSc Thesis: Spatial and Temporal Variation of Water Quality Parameters in Lake Tana Using Remote Sensing, Ethiopia
 
-![Google Earth Engine](https://img.shields.io/badge/Platform-Google%20Earth%20Engine-blue) ![MODIS](https://img.shields.io/badge/Satellite-MODIS%20MOD09Q1-green) ![Years](https://img.shields.io/badge/Period-2008–2018-orange) ![License](https://img.shields.io/badge/License-MIT-lightgrey) ![Samples](https://img.shields.io/badge/Samples-143%20in--situ-brightgreen)
+![Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Script-blue)
+![MODIS](https://img.shields.io/badge/Data-MODIS%20Terra-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Publication](https://img.shields.io/badge/Published-Frontiers%20in%20Water-blueviolet)
+![Samples](https://img.shields.io/badge/Field%20Samples-143-orange)
 
 ## 👨‍🎓 Author Information
 **Name:** Bekalu Weretaw Asres  
@@ -8,24 +12,24 @@
 **University:** Bahir Dar University, Institute of Technology  
 **Supervisor:** Fasikaw Atanaw (PhD)  
 **Submission Date:** 12 February 2020  
+**Publication:** Frontiers in Water (2025)
 
 ## 📖 Abstract
 This research utilizes MODIS satellite imagery to analyze spatial and temporal variations of water quality parameters in Lake Tana, Ethiopia. The study covers an 11-year period (2008-2018) and includes detailed seasonal analysis for August 2016, December 2016, and March 2017. Using Google Earth Engine, the research implements empirical regression models for water quality parameter estimation calibrated with 143 field samples, and conducts comprehensive trend analysis.
 
 ## 🎯 Research Objectives
-1. Analyze spatial variation of water quality parameters in Lake Tana
-2. Assess temporal variation from 2008 to 2018
-3. Develop empirical models for water quality estimation using field calibration
-4. Conduct trend analysis using statistical methods
-5. Provide recommendations for lake management
+- Analyze spatial variation of water quality parameters in Lake Tana
+- Assess temporal variation from 2008 to 2018
+- Develop empirical models for water quality estimation using field calibration
+- Conduct trend analysis using statistical methods
+- Provide recommendations for lake management
 
 ## 🔬 Field Data Collection
-
 ### In-situ Measurements (143 Samples)
 **Sampling Campaigns:**
-1. **August 2016** (Rainy season) 
-2. **December 2016** (Dry season)   
-3. **March 2017** (Post-rainy season) 
+- August 2016 (Rainy season)
+- December 2016 (Dry season)
+- March 2017 (Post-rainy season)
 
 **Sampling Design:**
 - 5km systematic grid across Lake Tana
@@ -33,72 +37,117 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 - Total: 143 geo-referenced water samples
 
 **Measured Parameters:**
-1. Secchi Depth (SD) - water clarity
-2. Chlorophyll-a (Chl-a) - algal biomass  
-3. Total Nitrogen (TN) - nutrient status
-4. Total Phosphorus (TP) - nutrient status
-5. Total Dissolved Solids (TDS) - salinity indicator
-6. pH - acidity/alkalinity
-7. Temperature
+- Secchi Depth (SD) - water clarity
+- Chlorophyll-a (Chl-a) - algal biomass
+- Total Nitrogen (TN) - nutrient status
+- Total Phosphorus (TP) - nutrient status
+- Total Dissolved Solids (TDS) - salinity indicator
+- pH - acidity/alkalinity
+- Temperature
 
 ## 🛠️ Methodology Overview
 1. **Data Acquisition:** MODIS surface reflectance (MOD09Q1, 2008-2018) accessed via Google Earth Engine.
 2. **Preprocessing:** Cloud masking, temporal compositing (monthly/seasonal), and clipping to Lake Tana.
-3. **Model Calibration:** Empirical regression models (e.g., Secchi Depth ~ f(Red Band Reflectance)) developed using the 143 in-situ samples.
-4. **Spatio-Temporal Analysis:** Application of calibrated models to generate monthly, seasonal, and annual parameter maps for the entire 11-year period.
-5. **Trend Analysis:** Statistical trend detection (e.g., Mann-Kendall, Sen's Slope) on the generated time series.
+3. **Model Calibration:** Empirical regression models developed using 143 in-situ samples.
+4. **Spatio-Temporal Analysis:** Application of calibrated models to generate parameter maps.
+5. **Trend Analysis:** Statistical trend detection (Mann-Kendall, Sen's Slope) on time series.
 
 ## 📁 Repository Structure
-```
+
 MSc_Thesis_LakeTana/
 ├── scripts/
-│   ├── main/GEE_Thesis_With_FieldData.js     # Complete analysis script
-│   └── utils/field_data_loader.js           # 143 samples data handler
-├── docs/setup_guide.md                      # Usage instructions
-├── thesis/abstract.md                       # Thesis abstract
+│ ├── main/
+│ │ ├── GEE_Thesis_With_FieldData.js # Complete 11-year analysis (2008-2018)
+│ │ └── water_quality_shapefile_analysis.js # Shapefile-based empirical models (Frontiers in Water 2025)
+│ └── utils/
+│ └── field_data_loader.js # 143 in-situ samples data handler
+├── docs/
+│ └── setup_guide.md # Usage instructions
+├── thesis/
+│ └── abstract.md # Thesis abstract
 ├── LICENSE
 ├── CITATION.cff
 ├── .gitignore
 └── README.md
-```
 
 
 ## 🚀 Quick Start
+### Option 1: Complete 11-Year Analysis
+1. **Access the Google Earth Engine Platform**
+   Navigate to the Google Earth Engine Code Editor with a registered GEE account.
 
-### 1. Access the Google Earth Engine Platform
-Navigate to the [Google Earth Engine Code Editor](https://code.earthengine.google.com/). You will need a registered GEE account.
-
-### 2. Prepare Your Field Data
-1. Open `scripts/utils/field_data_loader.js`
-2. Replace the placeholder arrays with your **143 actual field measurements**:
+2. **Prepare Your Field Data**
+   Open `scripts/utils/field_data_loader.js`
+   Replace the placeholder arrays with your 143 actual field measurements:
    - `var samplePoints` (GPS coordinates)
    - `var secchiDepth`, `var chlorophyll`, etc. (parameter values)
 
-### 3. Run the Analysis in GEE
-1. Copy the entire contents of `scripts/main/GEE_Thesis_With_FieldData.js` into the GEE code editor.
-2. If using the separate utility file, also copy `scripts/utils/field_data_loader.js`.
-3. Click the **"Run"** button to execute the script.
-4. Monitor the **"Console"** tab for processing progress and any warnings.
-5. Navigate to the **"Tasks"** tab to initiate exports of generated maps, charts, and data.
+3. **Run the Analysis in GEE**
+   Copy the entire contents of `scripts/main/GEE_Thesis_With_FieldData.js` into the GEE code editor.
+   If using the separate utility file, also copy `scripts/utils/field_data_loader.js`.
+   Click the "Run" button to execute the script.
+   Monitor the "Console" tab for processing progress.
+   Navigate to the "Tasks" tab to initiate exports.
 
-### 4. Adapt for Your Own Study Area
-To apply this methodology to a different lake:
-1. Update the `lakeTanaBoundary` geometry in the main script.
-2. Ensure your field data corresponds spatially and temporally with the satellite imagery period.
+### Option 2: Shapefile-Based Empirical Models (Publication Ready)
+1. **Run Shapefile Analysis**
+   Copy `scripts/main/water_quality_shapefile_analysis.js` into GEE Code Editor.
+   Click "Run" to execute.
+
+2. **Visualize Results**
+   After running, call: `visualizeResults()` to display map layers.
+
+3. **Export Data**
+   Use: `Export.table.toDrive({collection: exportData, description: "Lake_Tana_Metadata"});`
+
+4. **Adapt for Your Own Study Area**
+   - Update the lakeTana boundary geometry
+   - Ensure field data corresponds with satellite imagery period
 
 ## 📊 Available Scripts
-
-### Main Analysis Script
-- **[GEE_Thesis_With_FieldData.js](scripts/main/GEE_Thesis_With_FieldData.js)** - Complete integrated analysis including:
+### Main Analysis Scripts
+- **`GEE_Thesis_With_FieldData.js`** - Complete integrated analysis including:
   - MODIS data processing (2008-2018)
   - Seasonal analysis (3 campaigns)
   - Empirical model development
-  - Field data calibration
+  - Field data calibration (143 samples)
   - Trend analysis
   - Data export functions
 
+- **`water_quality_shapefile_analysis.js`** - Shapefile-based empirical models:
+  - Exact 2017 Lake Tana shapefile boundary
+  - Season-specific Secchi Depth models (R² up to 0.77)
+  - Calibrated with 300 field samples
+  - Visualization and export functions
+  - Publication-ready for Frontiers in Water (2025)
+
 ### Field Data Utilities
-- **[field_data_loader.js](scripts/utils/field_data_loader.js)** - Primary field data handler for 143 samples
+- **`field_data_loader.js`** - Primary field data handler for 143 samples
+
+## 🎯 Publication-Ready Shapefile Analysis
+**Script:** `scripts/main/water_quality_shapefile_analysis.js`
+
+**Key Features:**
+- Uses exact 2017 Lake Tana shapefile boundary (3057.86 km²)
+- Implements season-specific empirical Secchi Depth models
+- Calibrated with 300 field samples (100 per season)
+- Publication: Frontiers in Water (2025)
+
+**Empirical Models:**
+| Season | Model | R² | Field Samples |
+|--------|-------|----|---------------|
+| Rainy (Aug 2016) | SD = -1.51 × NIR + 0.35 | 0.67 | 100 |
+| Dry (Dec 2016) | SD = -12.57 × NIR + 0.85 | 0.77 | 100 |
+| Post-rainy (Mar 2017) | SD = -3.93 × NIR + 1.05 | 0.73 | 100 |
+
+**Key Results:**
+- **Lake Area:** 3,057.86 km² (from 2017 shapefile)
+- **Seasonal Secchi Depth:**
+  - August 2016: 0.234 m
+  - December 2016: 0.575 m
+  - March 2017: 0.889 m
+- **Seasonal Change:** 280% improvement in water clarity
+- **Model Performance:** R² up to 0.77
 
 ## 📈 Key Findings
 - **Spatial Patterns:** Higher turbidity and nutrient concentrations observed in the northern shallow regions of Lake Tana.
@@ -106,8 +155,25 @@ To apply this methodology to a different lake:
 - **Seasonal Variations:** Water quality parameters show highest variability during the wet season (June-September).
 - **Model Performance:** Empirical models showed strong correlation (R² > 0.7) for Secchi Depth and Chlorophyll-a when validated against field data.
 
+## 🔬 Methodological Innovations
+### 1. Shapefile Integration
+- ✓ Exact 2017 Lake Tana boundary (not rectangular approximation)
+- ✓ Precise water surface area calculation (3057.86 km²)
+- ✓ Accurate spatial analysis within actual lake boundaries
+
+### 2. Empirical Model Development
+- ✓ Season-specific models for different hydrological conditions
+- ✓ High R² values (0.67-0.77) with field validation
+- ✓ 300 calibration samples across three seasons
+
+### 3. Google Earth Engine Implementation
+- ✓ Memory-efficient processing at 500m scale
+- ✓ Median compositing for robust results
+- ✓ Automated export and visualization
+
 ## 📚 How to Cite
 
+### Thesis Citation:
 ```bibtex
 @mastersthesis{asres2020laketana,
   author  = {Bekalu Weretaw Asres},
@@ -120,13 +186,10 @@ To apply this methodology to a different lake:
   url     = {https://github.com/BekaluWeretaw/MSc_Thesis_LakeTana}
 }
 
-Contact
+📞 Contact
 Author: Bekalu Weretaw Asres
-
 GitHub: @BekaluWeretaw
-
 Institution: Bahir Dar University, Institute of Technology
-
 Department: Hydraulic Engineering
 
 🙏 Acknowledgments
@@ -140,4 +203,3 @@ Data Providers: NASA LP DAAC (MODIS data)
 
 📜 License
 This work is licensed under the MIT License - see the LICENSE file for details.
-
