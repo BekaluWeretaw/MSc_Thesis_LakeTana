@@ -52,7 +52,7 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 4. **Spatio-Temporal Analysis:** Application of calibrated models to generate parameter maps.
 5. **Trend Analysis:** Statistical trend detection (Mann-Kendall, Sen's Slope) on time series.
 
-## 📁 Repository Structure
+📁 Repository Structure
 ```
 MSc_Thesis_LakeTana/
 ├── scripts/
