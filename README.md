@@ -167,7 +167,7 @@ MSc_Thesis_LakeTana/
 - ✓ 300 calibration samples across three seasons
 
 ### 3. Google Earth Engine Implementation
-- ✓ Memory-efficient processing at 500m scale
+- ✓ Memory-efficient processing at 250m scale
 - ✓ Median compositing for robust results
 - ✓ Automated export and visualization
 
