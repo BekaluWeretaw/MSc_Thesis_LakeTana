@@ -6,14 +6,6 @@
 ![Status](https://img.shields.io/badge/Status-Research%20Complete-success)
 ![Samples](https://img.shields.io/badge/Field%20Samples-143-orange)
 
-## 👨‍🎓 Author Information
-**Name:** Bekalu Weretaw Asres  
-**Degree:** Master of Science in Hydraulic Engineering  
-**University:** Bahir Dar University, Institute of Technology  
-**Supervisor:** Fasikaw Atanaw (PhD)  
-**Thesis Submission:** 12 February 2020  
-**Current Status:** Research Complete - Ready for Publication
-
 ## 📖 Abstract
 This research utilizes MODIS satellite imagery to analyze spatial and temporal variations of water quality parameters in Lake Tana, Ethiopia. The study covers an 11-year period (2008-2018) and includes detailed seasonal analysis for August 2016, December 2016, and March 2017. Using Google Earth Engine, the research implements empirical regression models for water quality parameter estimation calibrated with 143 field samples, and conducts comprehensive trend analysis.
 
