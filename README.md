@@ -144,12 +144,6 @@ This research utilizes MODIS satellite imagery to analyze spatial and temporal v
 - ✓ Median compositing for robust results
 - ✓ Automated export and visualization
 
-## 📞 Contact
-**Author:** Bekalu Weretaw Asres  
-**GitHub:** [@BekaluWeretaw](https://github.com/BekaluWeretaw)  
-**Institution:** Bahir Dar University, Institute of Technology  
-**Department:** Hydraulic Engineering
-
 ## 🙏 Acknowledgments
 - **Primary Supervisor:** Dr. Fasikaw Atanaw
 - **Academic Institution:** Bahir Dar University
